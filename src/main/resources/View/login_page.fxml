@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.LoginPageController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login.LoginPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="43.0" prefHeight="54.0" prefWidth="548.0" text="       Login Page" textFill="#0847f4">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogin" layoutX="355.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="54.0" prefWidth="102.0" style="-fx-background-color: #4a30cf;" text="Login" textFill="#f7f6fa">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="150.0" layoutY="141.0" prefHeight="34.0" prefWidth="126.0" text="Username">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="188.0" prefHeight="26.0" prefWidth="126.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="315.0" layoutY="140.0" promptText="Name" style="-fx-background-color: #88d7e1;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="315.0" layoutY="183.0" promptText="password" style="-fx-background-color: #88d7e1;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <ImageView fx:id="imgIcon" fitHeight="150.0" fitWidth="259.0" layoutX="139.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/iconblast-password-9283909_1920.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
